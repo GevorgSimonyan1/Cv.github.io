@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgba(255, 217, 0, 0.459);
+    background-color: rgba(255, 217, 0, 0.3);
 }
 a{
     text-decoration: none;
@@ -21,13 +21,13 @@ section{
     justify-content: center; 
     align-items: center;
     text-align: center;
-    border-right:5px solid black ;
+    border-right:8px solid black ;
 }
 .img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 3px solid rgb(148, 128, 18);
+    border: 1px solid rgba(235, 204, 69, 0.801);
     box-shadow: 0 15px 40px 0 black;
     overflow: hidden;
     margin: 0 auto;
@@ -38,6 +38,7 @@ section{
 }
 .img:hover{
     transform: scale(1.2); 
+    box-shadow: 0 5px 25px 0 black;
 }
 .name>p{
     color: rgb(0, 0, 0);
@@ -46,9 +47,11 @@ section{
     border-radius: 15px;
     box-shadow: 0 5px 20px 0 rgba(94, 84, 27, 0.527);
     transition: 0.5s;
+    cursor: pointer;
 }
 .name>p:hover{
-  transform: scale(1.2);  
+  transform: scale(1.1);  
+  box-shadow: 0 5px 20px 0 black
 }
 
 .about{
@@ -57,32 +60,34 @@ section{
 }
 .education, .preferences,.I-know, .work{
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.61); 
     transition: 1s;
 }
 .work:hover{
-    background-color: rgba(0, 0, 0, 0.61);
+    background-color: rgba(0, 0, 0, 0.41);
     color: rgba(255, 217, 0, 0.459);
-    box-shadow: 0 5px 35px 0 rgba(172, 149, 19, 0.521);
-    transform: skew(1deg, 1deg);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.91);
+    transform: skew(0.5deg, 0.5deg);
 }
 .education:hover{
     background-color: rgba(0, 0, 0, 0.61);
     color: rgba(255, 217, 0, 0.459);
-    box-shadow: 0 5px 35px 0 rgba(172, 149, 19, 0.521);
-    transform: skew(-1deg, -1deg);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.91);
+    transform: skew(-0.5deg, -0.5deg);
 }
 .preferences:hover{
     background-color: rgba(0, 0, 0, 0.61);
     color: rgba(255, 217, 0, 0.459);
-    box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.91);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.91);
+    transform: skew(0.5deg, 0.5deg);
 }
 .I-know:hover{
     background-color: rgba(0, 0, 0, 0.61);
     color: rgba(255, 217, 0, 0.459);
-    box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.91);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.91);
+    transform: skew(-0.5deg, -0.5deg);
 }
 
 .education>p, .preferences>p, .I-know>p, .work>p{
@@ -102,6 +107,7 @@ section{
 }
 .contacts{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -125,10 +131,10 @@ section{
 .contacts>div>a>i{
     padding: 10px;
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.658);
+    color: rgba(0, 0, 0, 0.795);
 }
 .contacts>div:hover{
-    background-color: gold;
+    background-color: rgba(180, 178, 166, 0.26);
     color: #000;
     transform: scale(1.5);
 }
