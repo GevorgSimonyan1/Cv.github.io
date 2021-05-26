@@ -16,7 +16,7 @@ section{
 }
 .foto{
     width: 25%;
-    min-width: 315px;
+    min-width: 305px;
     display: flex;
     justify-content: center; 
     align-items: center;
